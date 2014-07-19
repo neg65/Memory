@@ -94,9 +94,9 @@ var skor;
 		$.puanver = function(){
 			clearInterval(skor);
 			var a;
-			if(puan<701){a=2000;}
-			if(puan>700 && puan<1201){a=1000;}
-			if(puan>1200){a=500;}
+			if(puan<701){a=200;}
+			if(puan>700 && puan<1201){a=100;}
+			if(puan>1200){a=50;}
 			var b = parseInt($("#puan").text());
 			$("#puan").text(b+a);
 			puan = 0;

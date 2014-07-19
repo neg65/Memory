@@ -47,12 +47,13 @@ body{margin:0px; padding:0px; background:#F9FAFA; font-family: 'Ubuntu', sans-se
 .cevap{
 	width:40%;
 	margin:0px 5%;
-	height:3em;
+	height:5em;
 	float:left;
 	border-radius:3px;
-	line-height:3em;
+	line-height:5em;
 	cursor:pointer;
 	text-align:center;
+	font-size:2em;
 }
 
 .ekran{ width:100%; background:#000; opacity:0.5; position:fixed; top:0; left:0; z-index:2;}
