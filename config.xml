@@ -5,10 +5,10 @@
         id        = "com.hafiza.oyun"
         version   = "1.0.0">
 
-    <name>Neg Hafıza</name>
+    <name>Neg HafÄ±za</name>
 
     <description>
-        PhoneGap basit hafıza oyunu.
+        PhoneGap basit hafÄ±za oyunu.
     </description>
 
     <author href="http://negian.tk" email="omerr.duzz@gmail.com">
