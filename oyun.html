@@ -13,6 +13,9 @@
 		var a = $("#kutu").css("width");
 		$("#kutu").css("height",a);
 		$(".ekran").css("height",b);
+		
+		var c = parseInt($("body").height());
+		$("body").css("margin-top",(b-c)/2);
 	
 	})
 	</script>
@@ -25,8 +28,8 @@
 	</div>
 	<div id="soru">Renk</div>
 	<div id="oyun">
-		<div class="cevap" id="dogru" style="background:green;"></div>
-		<div class="cevap" id="yanlis" style="background:red;"></div>
+		<div class="cevap" id="dogru" style="background:green;">Aynı</div>
+		<div class="cevap" id="yanlis" style="background:red;">Farklı</div>
 	</div>
 	<div class="ekran"></div>
 	</div>

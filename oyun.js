@@ -93,7 +93,10 @@ var skor;
 		
 		$.puanver = function(){
 			clearInterval(skor);
-			var a = parseInt(1201200/puan);
+			var a;
+			if(puan<701){a=2000;}
+			if(puan>700 && puan<1201){a=1000;}
+			if(puan>1200){a=500;}
 			var b = parseInt($("#puan").text());
 			$("#puan").text(b+a);
 			puan = 0;
@@ -104,17 +107,27 @@ var skor;
 		
 		$.puanlama = function(){
 		if(puan==3000){ $.yandi(); }
-			puan = puan+100;
-			console.log(puan)
-			
+			puan = puan+100;			
 		}
 		
 		$.yandi = function(){
 			clearInterval(skor);
-			var durum = $("#puan").text();
+			var durum = parseInt($("#puan").text());
 			$("#main").remove();
-			$("body").append("<div class='sonuc'>Skor: <i>"+durum+"</i></div>");
+			var yuksek = parseInt(localStorage.getItem("yuksek"));
+			if(yuksek>durum){
+				$("body").append("<div class='sonuc'>Skor: <i>"+durum+"</i></div>");
+				$("body").append("<div class='sonuc' style='font-size:2em;' >Rekor: <i>"+yuksek+"</i></div>");
+			
+			}else{
+				localStorage.setItem("yuksek",durum);
+				$("body").append("<div class='sonuc'>Skor: <i>"+durum+"</i></div>");
+				$("body").append("<div class='sonuc' style='font-size:2em; color:red;' >Yeni Rekor!</div>");
+			}
+			
+			
 			$("body").append('<div onclick="location.href=\'oyun.html\'" class="buton" style="width:90%; background:#6FBC49;">Tekrar Oyna</div>');
+			$("body").append('<div onclick="location.href=\'index.html\'" class="buton" style="width:90%; background:#50CDE2;">Geri</div>');
 		}
 	
 		

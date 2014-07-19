@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		var a = parseInt($("body").height());
+		var b = parseInt($(window).height());
+		$("body").css("margin-top",(b-a)/2);
+	});
+	</script>
+</head>
+<body>
+<div class="aciklama">Gelen soruya göre şuan ekranda olan görüntüye ve bir önceki adımdaki görüntüye göre <i>Aynı</i> yada <i>Farklı</i> cevabını verin.</div>
+<div class="aciklama" style="background:#50CDE2;">Örneğin bir önce görüntü <i>Yeşil Üçgen</i> şuan ki görüntü <i>Mavi Üçgen</i> ve soruda şekil ise <i>Aynı</i> cevabını vermeniz gerekiyor.</div>
+<div class="aciklama" style="background:#5EAE36;">Max 3 sn bekleme sürenizin olduğunu unutmayın.</div>
+<div class="buton" onclick="location.href='index.html';" style="width:90%;">Geri</div>
+<div style="clear:both;"></div>
+</body>
+</html>
