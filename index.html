@@ -6,6 +6,36 @@
 	<link rel="stylesheet" href="style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		window.plugins.AdMob.createBannerView(
+     {
+       'publisherId': 'ca-app-pub-7413616029348939/5785719404',
+       'adSize': AdSize.BANNER
+     },
+     successCallback,
+     failureCallback
+ );
+ 
+  window.plugins.AdMob.requestAd(
+     {
+       'isTesting': false,
+       'extras': {
+         'color_bg': 'AAAAFF',
+         'color_bg_top': 'FFFFFF',
+         'color_border': 'FFFFFF',
+         'color_link': '000080',
+         'color_text': '808080',
+         'color_url': '008000'
+       },
+     },
+     successCallback,
+     failureCallback
+ );
+	
+	
+	})
+	</script>
 </head>
 <body>
 	
