@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.hafiza.oyun"
+        version   = "1.0.0">
+
+    <name>Neg Hafýza</name>
+
+    <description>
+        PhoneGap basit hafýza oyunu.
+    </description>
+
+    <author href="http://negian.tk" email="omerr.duzz@gmail.com">
+        Negian
+    </author>
+
+    <preference name="permissions"                value="none"/>
+
+    <preference name="phonegap-version"           value="3.5.0" />          <!-- all: current version of PhoneGap -->
+    <preference name="orientation"                value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
+    <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
+    <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
+    <preference name="android-minSdkVersion"      value="7" />              <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
+    <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
+
+    <icon src="icon/icon-32.png" />
+    <icon src="icon/icon-36.png"   gap:platform="android"    gap:qualifier="ldpi" />
+    <icon src="icon/icon-48.png"   gap:platform="android"    gap:qualifier="mdpi" />
+    <icon src="icon/icon-72.png"   gap:platform="android"    gap:qualifier="hdpi" />
+    <icon src="icon/icon-96.png"  gap:platform="android"    gap:qualifier="xhdpi" />
+
+    <access origin="*"/>
+
+</widget>

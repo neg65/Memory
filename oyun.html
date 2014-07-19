@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Oyun#Hafıza</title>
+	<link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="oyun.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		var b = $(window).height();
+		var a = $("#kutu").css("width");
+		$("#kutu").css("height",a);
+		$(".ekran").css("height",b);
+	
+	})
+	</script>
+</head>
+<body>
+	<div id="main">
+	<div id="skor">Skor <i><span id="puan">0</span></i></div>
+	<div id="kutu">
+		<img src="ucgen.png" alt=""/>
+	</div>
+	<div id="soru">Renk</div>
+	<div id="oyun">
+		<div class="cevap" id="dogru" style="background:green;"></div>
+		<div class="cevap" id="yanlis" style="background:red;"></div>
+	</div>
+	<div class="ekran"></div>
+	</div>
+</body>
+</html>
